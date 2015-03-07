@@ -14,7 +14,7 @@ PowerDataSub$Datetime <- as.POSIXct(DateTime)
 
 ##step 5 : Plot 4 graphs in 2 rows and 2 columns graph  with legends and title
 
-par(mfrow=c(2,2), mar=c(2,2,2,1), oma=c(0,0,2,0))
+par(mfrow=c(2,2), mar=c(4,4,2,1), oma=c(0,0,2,0))
 with(PowerDataSub, {
   plot(Global_active_power~Datetime, type="l",ylab="Global Active Power (kilowatts)", xlab="")
   plot(Voltage~Datetime, type="l", ylab="Voltage (volt)", xlab="")
